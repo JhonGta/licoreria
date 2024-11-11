@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Licorería GT</title>
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Custom stylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<!-- HEADER -->
+<header>
+    <!-- TOP HEADER -->
+    <div id="top-header">
+        <div class="container">
+            <ul class="header-links pull-left">
+                <li><a href="#"><i class="fa fa-phone"></i> +593-9795877332</a></li>
+                <li><a href="#"><i class="fa fa-envelope-o"></i> licoreclipse@gmail.com</a></li>
+                <li><a href="comollegar.html"><i class="fa fa-map-marker"></i> Coop. Modelo</a></li>
+            </ul>
+            <ul class="header-links pull-right">
+                <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
+                <li><a href="#"><i class="fa fa-user-o"></i> Mi Cuenta</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- /TOP HEADER -->
+    <!-- MAIN HEADER -->
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="header-logo">
+                        <a href="#" class="logo">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="header-search">
+                        <form>
+                            <select class="input-select">
+                                <option value="0">Todas las Categorías</option>
+                                <option value="1">Categoría 01</option>
+                                <option value="1">Categoría 02</option>
+                            </select>
+                            <input class="input" placeholder="Buscar aquí">
+                            <button class="search-btn">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-3 clearfix">
+                    <div class="header-ctn">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span>Tu Carrito</span>
+                                <div class="qty" id="cart-count">0</div>
+                            </a>
+                            <div class="cart-dropdown">
+                                <div class="cart-list" id="cart-items">
+                                    <!-- Aquí se insertarán los productos del carrito -->
+                                </div>
+                                <div class="cart-summary">
+                                    <small>0 Item(s) seleccionados</small>
+                                    <h5>SUBTOTAL: $0.00</h5>
+                                </div>
+                                <div class="cart-btns">
+                                    <a href="#">Ver Carrito</a>
+                                    <a href="#">Proceder a Comprar <i class="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /MAIN HEADER -->
+</header>
+<!-- /HEADER -->
+
+<!-- BREADCRUMB -->
+<div id="breadcrumb" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="breadcrumb-header">Carrito de Compras</h3>
+                <ul class="breadcrumb-tree">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="active">Carrito</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /BREADCRUMB -->
+
+<!-- SECTION -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 order-details">
+                <div class="section-title text-center">
+                    <h3 class="title">Tu Pedido</h3>
+                </div>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="order-cart-items">
+                        <!-- Aquí se insertarán los productos del carrito -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td><strong>Total</strong></td>
+                            <td id="cart-total">$0.00</td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <button id="checkout" class="btn btn-success mt-3">Proceder a Comprar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /SECTION -->
+
+<!-- FOOTER -->
+<footer id="footer">
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <span class="copyright">
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- /FOOTER -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="script.js"></script> <!-- Archivo JS específico para carrito.html -->
+</body>
+</html>
