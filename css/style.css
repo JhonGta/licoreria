@@ -2241,3 +2241,55 @@ body {
       height: 150px; /* Ajusta la altura en pantallas pequeñas */
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+     /* Estilos personalizados para que el diseño se vea bien en dispositivos móviles */
+        #top-header {
+            background-color: #1E1F29;
+            color: #fff;
+            padding: 10px 0;
+        }
+        .header-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        #header h1 {
+          
+            color: #ffffff;
+            
+        }
+        #navigation {
+            background-color: #ffffff;
+        }
+        #navigation .main-nav {
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+        #navigation .main-nav li a {
+            color: #000000;
+            font-weight: 500;
+            padding: 10px 15px;
+        }
+        /* Ajustes para dispositivos móviles */
+        @media (max-width: 768px) {
+            #navigation .main-nav {
+                flex-direction: column;
+                align-items: center;
+            }
+          
+            .product {
+                margin-bottom: 20px;
+            }
+        }
